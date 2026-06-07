@@ -1,11 +1,11 @@
-import React from 'react'
+import { connectDB } from "@/lib/mongodb";
 
-const page = () => {
+export default async function Home() {
+  await connectDB();
+
   return (
-    <div>
-      <h2>money is money</h2>
-    </div>
-  )
+    <main>
+      <h1>AutoStore SaaS</h1>
+    </main>
+  );
 }
-
-export default page

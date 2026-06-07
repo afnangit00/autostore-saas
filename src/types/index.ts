@@ -15,3 +15,9 @@ export interface Vehicle {
   title: string;
   price: number;
 }
+
+export interface IUser {
+  name: string;
+  email: string;
+  password: string;
+}

@@ -20,3 +20,9 @@
 
 ## Phase 7
 - Payments
+
+
+
+ClWrs8QtmPyDkiOL
+
+mongodb+srv://afnancheranthodika_db_user:ClWrs8QtmPyDkiOL@motor-saas.la6ubhx.mongodb.net/?appName=Motor-saas
