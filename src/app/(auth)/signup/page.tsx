@@ -1,9 +1,28 @@
-import React from 'react'
-
-const page = () => {
+export default function SignupPage() {
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <h1>Signup</h1>
 
-export default page
+      <form>
+        <input
+          type="text"
+          placeholder="Name"
+        />
+
+        <input
+          type="email"
+          placeholder="Email"
+        />
+
+        <input
+          type="password"
+          placeholder="Password"
+        />
+
+        <button type="submit">
+          Create Account
+        </button>
+      </form>
+    </div>
+  );
+}
