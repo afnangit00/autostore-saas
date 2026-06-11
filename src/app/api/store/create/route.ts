@@ -12,7 +12,7 @@ export async function POST(request : Request) {
               const { name, slug, description } = body;
 
               const ownerId = "afi10"
-              
+
               await Store.create({
                  ownerId,
                  name,
@@ -29,7 +29,6 @@ export async function POST(request : Request) {
                         { status: 500 }
                 );
         }
-
 
   return NextResponse.json({
     success: true,
