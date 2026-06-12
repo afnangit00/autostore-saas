@@ -1,9 +1,13 @@
-import React from 'react'
-
-const dashboard = () => {
+export default function Dashboard() {
   return (
-    <div> Dashboard page its very free</div>
-  )
-}
+    <div>
+      <h1>
+        Store Dashboard
+      </h1>
 
-export default dashboard
+      <p>
+        Store data coming soon...
+      </p>
+    </div>
+  );
+}
