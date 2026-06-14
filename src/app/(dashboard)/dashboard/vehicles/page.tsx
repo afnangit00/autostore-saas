@@ -1,9 +1,9 @@
-import React from 'react'
-
-const page = () => {
+export default function VehiclesPage() {
   return (
-    <div>page</div>
-  )
+    <div>
+      <h1>
+        Vehicles
+      </h1>
+    </div>
+  );
 }
-
-export default page
