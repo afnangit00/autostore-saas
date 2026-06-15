@@ -30,6 +30,11 @@ const VehicleSchema = new Schema({
         description: {
                 type: String,
         },
+        slug: {
+                type: String,
+                required: true,
+                unique: true,
+        },
 }, {
         timestamps: true,
     }

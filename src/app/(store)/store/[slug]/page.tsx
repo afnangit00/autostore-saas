@@ -1,6 +1,7 @@
 import Store from "@/models/Store";
 import Vehicle from "@/models/Vehicle";
 import { connectDB } from "@/lib/mongodb";
+import Link from "next/link";
 
 export default async function StorePage(
   {
@@ -35,7 +36,7 @@ if (!store) {
   
   return (
  <div>
-
+   
    <h1>{store.name}</h1>
 <p>{store.description}</p>
 
@@ -45,7 +46,13 @@ if (!store) {
    (vehicle:any) => (
 
     <div key={vehicle._id}>
-      <h3>{vehicle.title}</h3>
+      <Link
+          href={`/store/${store.slug}/${vehicle.slug}`}
+        >
+          <h3>
+            {vehicle.title}
+          </h3>
+        </Link>
       <p>₹{vehicle.price}</p>
     </div>
    ))}
