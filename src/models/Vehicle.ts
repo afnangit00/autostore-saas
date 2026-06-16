@@ -35,6 +35,10 @@ const VehicleSchema = new Schema({
                 required: true,
                 unique: true,
         },
+        imageUrl: {
+                type: String,
+                default: "",
+        },
 }, {
         timestamps: true,
     }

@@ -54,6 +54,30 @@ if (!store) {
           </h3>
         </Link>
       <p>₹{vehicle.price}</p>
+
+      <img
+  src={vehicle.imageUrl}
+  alt={vehicle.title}
+  width={250}
+/>
+{
+  vehicle.imageUrl
+    ? (
+        <img
+          src={
+            vehicle.imageUrl
+          }
+          alt={
+            vehicle.title
+          }
+        />
+      )
+    : (
+        <p>
+          No Image
+        </p>
+      )}
+
     </div>
    ))}
 </div>

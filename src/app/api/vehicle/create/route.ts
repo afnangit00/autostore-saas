@@ -20,7 +20,16 @@ export async function POST(request: Request) {
   }
 
   const body = await request.json();
-  const { title, slug, brand, price, year, fuelType, description } = body;
+  const { 
+    title, 
+    slug, 
+    brand, 
+    price, 
+    year, 
+    fuelType, 
+    description,
+    imageUrl,
+       } = body;
 
   await Vehicle.create({
     storeId: store._id,
@@ -31,6 +40,7 @@ export async function POST(request: Request) {
     year,
     fuelType,
     description,
+    imageUrl,
   });
 
   return NextResponse.json({ success: true });

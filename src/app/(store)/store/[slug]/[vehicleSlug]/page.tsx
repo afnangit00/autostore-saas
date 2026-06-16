@@ -61,6 +61,12 @@ const vehicle =
       {vehicle.description}
     </p>
 
+    <img
+  src={vehicle.imageUrl}
+  alt={vehicle.title}
+  width={500}
+/>
+
     <button>
   Contact Dealer
 </button>
