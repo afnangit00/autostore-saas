@@ -15,6 +15,13 @@ export async function GET() {
       ownerId,
     });
 
+    if (!store) {
+  return NextResponse.json({
+    success: false,
+    leads: [],
+  });
+}
+
   const leads =
     await Lead.find({
       storeId:
