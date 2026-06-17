@@ -1,12 +1,17 @@
-export default function Dashboard() {
+export default function DashboardPage() {
   return (
     <div>
-      <h1>
-        Store Dashboard
+      <h1
+        className="
+          text-3xl
+          font-bold
+        "
+      >
+        Dashboard
       </h1>
 
       <p>
-        Store data coming soon...
+        Welcome to AutoStore
       </p>
     </div>
   );
