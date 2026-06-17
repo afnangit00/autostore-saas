@@ -32,9 +32,9 @@ const vehicle =
 
   return (
     
-  <div>
+  <div className="max-w-5xl mx-auto p-6" >
  
-    <h1>
+    <h1 className="text-4xl font-bold" >
       {vehicle.title}
     </h1>
 
@@ -42,7 +42,7 @@ const vehicle =
       Brand:  {vehicle.brand}
     </p>
 
-    <p>
+    <p className="text-2xl mt-3" >
       Price:
       ₹{vehicle.price}
     </p>
@@ -62,10 +62,10 @@ const vehicle =
     </p>
 
     <img
-  src={vehicle.imageUrl}
-  alt={vehicle.title}
-  width={500}
-/>
+    className="w-full rounded-lg mb-6"
+    src={vehicle.imageUrl}
+    alt={vehicle.title}
+    />
 
     <button>
   Contact Dealer
