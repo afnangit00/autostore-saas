@@ -28,6 +28,7 @@ const leads = data.leads || [];
       (lead: any) => (
         <div
           key={lead._id}
+          className="border p-4 mt-3"
         >
           <h3>
             {lead.name}
