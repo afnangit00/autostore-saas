@@ -32,84 +32,29 @@ return (
 <div>
 
 
-<input
-
-placeholder="Search vehicle..."
-
-value={search}
-
-onChange={
-(e)=>
-setSearch(e.target.value)
-}
-
-className="
-border
-p-3
-w-full
-mb-6
-"
-
-/>
+<input placeholder="Search vehicle..."
+value={search} onChange={
+(e)=> setSearch(e.target.value)}
+className="border p-3 w-full mb-6"/>
 
 
 
-<div
-className="
-grid
-grid-cols-1
-md:grid-cols-3
-gap-6
-"
->
-
-
-{
-filteredVehicles.map(
-(vehicle)=> (
-
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+{ filteredVehicles.map((vehicle)=> (
 <div
 key={vehicle._id}
-className="
-border
-rounded-xl
-overflow-hidden
-"
->
-
-
-<img
-
-src={vehicle.imageUrl}
-
+className="border rounded-xl overflow-hidden">
+<img src={vehicle.imageUrl}
 alt={vehicle.title}
-
-className="
-w-full
-h-52
-object-cover
-"
-
-/>
-
-
+className="w-full h-52 object-cover"/>
 <div className="p-4">
+<h2>{vehicle.title}</h2>
 
-<h2>
-{vehicle.title}
-</h2>
-
-
-<p>
-₹{vehicle.price}
-</p>
-
+<p> ₹{vehicle.price} </p>
 
 <Link
 
-href={`/store/${storeSlug}/${vehicle.slug}`}
-
->
+href={`/store/${storeSlug}/${vehicle.slug}`}>
 View Details
 </Link>
 
