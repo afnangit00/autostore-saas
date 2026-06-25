@@ -21,7 +21,7 @@ async function getStats() {
 
   const response =
     await fetch(
-      "http://localhost:3000/api/dashboard/stats",
+      `${process.env.NEXT_PUBLIC_URL}/api/dashboard/stats`,
       {
         cache:"no-store",
 
