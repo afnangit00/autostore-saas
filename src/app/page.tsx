@@ -17,14 +17,7 @@ min-h-screen
 
 
 <section
-className="
-max-w-7xl
-mx-auto
-p-6
-py-20
-text-center
-"
->
+className="max-w-7xl mx-auto p-6 py-20 text-center">
 
 
 <h1

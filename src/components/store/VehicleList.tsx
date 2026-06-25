@@ -63,19 +63,7 @@ Contact Dealer </a>
 </div>
 </div>
 
-
-)
-
-)
-
-}
-
-
+))}
 </div>
-
-
 </div>
-
-)
-
-}
+)}
